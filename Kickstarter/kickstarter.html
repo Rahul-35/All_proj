@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Kickstarter</title>
+	</head>
+	<body>
+		<div id="1st">
+		<hr>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<h1><strong>KICKSTARTER</strong></h1>
+		</div>
+		<div id="container">
+			<form name="myjs" onsubmit="jsfunction()">
+				<h3><caption>Have an Account?<a href="1.html">log in</a></caption></h3>
+				<h2><caption><strong>SIGN UP</strong></caption></h2>
+				<input type="textfield" placeholder="Name" id="name" name="name">
+				<label for="Name"></label><br>
+				<br><input type="email" placeholder="Email" id="email" name="email">
+				<label for="Email"></label><br>
+				<br><input type="email" placeholder="Re-enter email" id="Re-enter email" name="remail">
+				<label for="Re-enter email"></label><br>
+				<br><input type="password" placeholder="Password" id="password" name="pass">
+				<label for="password"></label><br>
+				<br><input type="password" placeholder="Re-enter password" id="Re-enter password" name="rpass">
+				<label for="Re-enter password"></label><br>
+				<br><input type="checkbox" id="check" name="check"><label>Terms and Conditions</label><br>
+				<br><input type="submit" value="Create Account" id="hello"><br>
+				<br><caption>By signing up, you agree to our terms of use,privacy policy and cookie policy. Our policies explain how we use your data to deliver,improve, and promote our service and our site, and how you can exercise your rights to control that use</caption><br>
+				<br><input type="submit" value="Login with Facebook" id="helo"><br>
+			</form>
+		<script>
+               function jsfunction(){
+                        var name=document.myjs.name.value;
+                          var email=document.myjs.email.value;
+                           var remail=document.myjs.remail.value;
+                           var pass=document.myjs.pass.value;
+                            var rpass=document.myjs.rpass.value;
+                            var check=document.myjs.check.checked;
+                        if(name==""){
+                                alert("Name can't be blank!!");
+                                return false;
+                                     }      
+                       else if(email==""){
+                                alert("Please enter your correct E-Mail!!");
+                                    return false;}
+                           else if(email!=remail){
+                                alert("Emails do not match!!");
+                                    return false;}
+                            else if(pass.length<6){
+                                alert("Password must be at least 6 characters long.");
+                                    return false;}
+                            else if(pass!=rpass){
+                                alert("Passwords do not match.");
+                                    return false;}
+                            else if(check==false){
+                                alert("Please read the Terms and Conditions before submission");
+                                    return false;}
+                             else
+                                    return true;
+
+} </script>
+	</body>
+	</html>
+
