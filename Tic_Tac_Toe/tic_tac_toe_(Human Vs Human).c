@@ -68,25 +68,6 @@ void get_player2_move()
                 matrix[x][y]='O';
 }
 
-/*void get_computer_move()
-{
-        int i,j;
-        for(i=0;i<3;i++)
-        {
-                for(j=0;j<3;j++){
-                        if(matrix[i][j]==' ')
-                                break;
-                }
-                if(matrix[i][j]==' ')
-                        break;
-        }
-        if(i*j==9){
-                printf("draw\n");
-                exit(0);
-        }
-        else
-                matrix[i][j]=='O';
-}*/
 void disp_matrix()
 {
         int t;
