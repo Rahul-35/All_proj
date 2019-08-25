@@ -55,11 +55,11 @@ void get_computer_move()
 	for(i=0;i<3;i++)
 	{
 		for(j=0;j<3;j++){
-			//if(matrix[i][j]==' ')
-			//	break;
-		//}
-		//if(matrix[i][j]==' ')
-		//	break;
+			if(matrix[i][j]==' ')
+				break;
+		}
+		if(matrix[i][j]==' ')
+			break;
 	
 	if(i*j==9){
 		printf("draw\n");
